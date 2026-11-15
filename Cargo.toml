@@ -1,0 +1,16 @@
+[package]
+name = "vulky"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+ash = "0.38.0"
+ash-window = "0.13.0"
+gpu-allocator = { version = "0.28.0", default-features = false, features = ["vulkan", "std"]}
+pollster = "1.0.1"
+raw-window-handle = "0.6.2"
+serde = { version = "1.0.229", features = ["derive", "serde_derive"] }
+shaderc = "0.10.1"
+thiserror = "2.0.21"
+winit = "0.30.13"
